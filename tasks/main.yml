@@ -1,0 +1,28 @@
+---
+
+  # HPE Software Repos
+  # HPE has not released repo for bionic yet, so we use xenial until the newer version is released.
+- name: Add HPE Software repos
+  apt_repository:
+    repo: deb http://downloads.linux.hpe.com/SDR/repo/mcp xenial/10.62 non-free
+
+- name: Add HPE Apt signing keys
+  apt_key: url={{ item }} state=present
+  with_items:
+    - https://downloads.linux.hpe.com/SDR/hpPublicKey2048.pub
+    - https://downloads.linux.hpe.com/SDR/hpPublicKey2048_key1.pub
+    - https://downloads.linux.hpe.com/SDR/hpePublicKey2048_key1.pub
+
+- name: Install HPE Softwares
+  apt: name={{ packages }} state=present update_cache=yes
+  vars:
+    packages:
+      - hp-health
+      - hponcfg
+      - hp-ams
+      - hp-snmp-agents
+      - hpsmh
+      - hp-smh-templates
+      - ssacli
+      - ssaducli
+      - ssa
