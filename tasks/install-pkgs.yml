@@ -13,8 +13,10 @@
     description: Management Component Pack
     baseurl: http://downloads.linux.hpe.com/repo/mcp/{{ hpe_dist }}/{{ hpe_dist_ver }}/{{ hpe_arch }}/{{ hpe_project_ver }}
     enabled: yes
-    gpgkey: file:///etc/pki/rpm-gpg/GPG-KEY-mcp
-    state: present
+    gpgkey: https://downloads.linux.hpe.com/SDR/hpPublicKey1024.pub
+            https://downloads.linux.hpe.com/SDR/hpPublicKey2048.pub
+            https://downloads.linux.hpe.com/SDR/hpPublicKey2048_key1.pub
+            https://downloads.linux.hpe.com/SDR/hpePublicKey2048_key1.pub
   when: ansible_distribution == 'CentOS' or ansible_distribution == 'RedHat'
 
 - name: Add HPE Apt signing keys
@@ -30,4 +32,4 @@
   package:
     name: "{{ hpe_pkgs }}"
     state: present
-    update_cache: "{{ omit if ansible_pkg_mgr == 'dnf' else 'yes' }}"
+    update_cache: "{{ omit if ansible_pkg_mgr == 'yum' else 'yes' }}"
