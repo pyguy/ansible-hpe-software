@@ -1,0 +1,5 @@
+---
+
+hpe_dist: xenial
+# current for Gen10, 10.xx for Gent9
+hpe_project_ver: current
