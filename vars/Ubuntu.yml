@@ -1,0 +1,14 @@
+---
+
+#hpe_dist: {{ ansible_distribution_release }}
+
+hpe_pkgs:
+  - hp-health
+  - hponcfg
+  - hp-ams
+  - hp-snmp-agents
+  - hpsmh
+  - hp-smh-templates
+  - ssacli
+  - ssaducli
+  - ssa

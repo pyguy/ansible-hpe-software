@@ -1,4 +1,14 @@
 ---
 
+- name: Import variables specific to distribution
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "vars/{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
+    - "vars/{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
+    - "vars/{{ ansible_distribution }}.yml"
+    - "vars/default.yml"
+
   # HPE Software Installation
-- include_tasks: install-pkgs.yml
+- name: Install HPE Software
+  include: install-pkgs.yml
+  when: state|default('present') == 'present'
