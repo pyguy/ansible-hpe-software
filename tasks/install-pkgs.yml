@@ -13,6 +13,7 @@
     description: Management Component Pack
     baseurl: http://downloads.linux.hpe.com/repo/mcp/{{ hpe_dist }}/{{ hpe_dist_ver }}/{{ hpe_arch }}/{{ hpe_project_ver }}
     enabled: yes
+    gpgcheck: no
     gpgkey: https://downloads.linux.hpe.com/SDR/hpPublicKey1024.pub
             https://downloads.linux.hpe.com/SDR/hpPublicKey2048.pub
             https://downloads.linux.hpe.com/SDR/hpPublicKey2048_key1.pub
