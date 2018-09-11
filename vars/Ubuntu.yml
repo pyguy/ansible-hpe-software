@@ -1,7 +1,7 @@
 ---
 
 #hpe_dist: "{{ ansible_distribution_release }}"
-hpe_dist: "xenial"
+hpe_dist: xenial
 
 hpe_pkgs:
   - hp-health
