@@ -1,6 +1,6 @@
 ---
 
-#hpe_dist: {{ ansible_distribution_release }}
+hpe_dist: "{{ ansible_distribution_release }}"
 
 hpe_pkgs:
   - hp-health
