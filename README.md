@@ -40,3 +40,9 @@ You can simply use pip to install (and define) a stable version:
 ```sh
 pip install ansible==2.6.3
 ```
+
+Install role
+------------
+```sh
+ansible-galaxy install pyguy.hpe-software
+```
