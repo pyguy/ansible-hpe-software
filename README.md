@@ -10,6 +10,7 @@ Tested platforms are:
 
   * Ubuntu
     * bionic
+    * xenial
     * trusty
     * precise
 
