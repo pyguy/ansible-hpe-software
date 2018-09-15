@@ -1,6 +1,6 @@
 ---
 
-hpe_dist: xenial
+hpe_dist: CentOS
 hpe_dist_ver: 7
 # current for Gen10, 10.xx for Gent9
 hpe_project_ver: current

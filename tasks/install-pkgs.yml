@@ -9,6 +9,7 @@
 
 - name: Add HPE Yum Software Repository
   yum_repository:
+    name: mcp
     state: present
     description: Management Component Pack
     baseurl: "http://downloads.linux.hpe.com/repo/mcp/{{ hpe_dist }}/{{ hpe_dist_ver }}/{{ hpe_arch }}/{{ hpe_project_ver }}"
