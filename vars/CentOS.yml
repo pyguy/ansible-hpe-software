@@ -4,7 +4,6 @@ hpe_dist: "{{ ansible_distribution }}"
 hpe_dist_ver: "{{ ansible_distribution_major_version }}"
 
 hpe_pkgs:
-  - amsd
   - hponcfg
   - ssacli
   - ssaducli

@@ -1,0 +1,18 @@
+---
+
+- block:
+    - name: "end play if not HPE server"
+      debug:
+        msg: "System Vendor: {{ ansible_system_vendor }}"
+    - meta: end_play
+  when: ansible_system_vendor != 'HP'
+
+- name: check HPE server product model
+  debug:
+    msg: "Product Name: {{ ansible_product_name }}"
+
+#- name:
+#  vars:
+#    hpe_pkgs:
+#        - amsd
+#  when: ansible_product_name == G10

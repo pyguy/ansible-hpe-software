@@ -1,5 +1,9 @@
 ---
 
+# Check vendor is HP or not
+- include_tasks: check-model.yml
+  when: check_model
+
 - name: Import variables specific to distribution
   include_vars: "{{ item }}"
   with_first_found:
