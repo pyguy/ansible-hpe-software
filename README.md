@@ -45,5 +45,5 @@ pip install ansible==2.6.3
 Install role
 ------------
 ```sh
-ansible-galaxy install pyguy.hpe-software
+ansible-galaxy install pyguy.hpe_software
 ```
