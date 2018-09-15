@@ -2,6 +2,7 @@ galaxy_info:
   author: pyguy (hr.josheghani)
   description: HPE software role
   license: GPLv2
+  role_name: hpe-software
   min_ansible_version: 2.4
   platforms:
   - name: CentOS
