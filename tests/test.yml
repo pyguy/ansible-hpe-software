@@ -1,5 +1,11 @@
 ---
 - hosts: localhost
   remote_user: root
+  check_model: true
+  # Ubuntu 16.04 or 18.04
+  hpe_dist: xenial
+  # HPE Gen9 and earlier 
+  hpe_project_ver: 10.62
+
   roles:
       - pyguy.hpe_software
