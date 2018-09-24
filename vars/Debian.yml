@@ -12,3 +12,4 @@ hpe_pkgs:
   - ssacli
   - ssaducli
   - ssa
+  - lldpd

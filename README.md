@@ -31,6 +31,10 @@ links
 * [HPE Repository Listing](http://downloads.linux.hpe.com/SDR/repo/)
 * [HPE Project Repositories](https://downloads.linux.hpe.com/SDR/index.html)
 
+Wiki
+----
+you can find details about HPE sotware usage here at [project Wiki](https://github.com/pyguy/ansible-hpe-software/wiki/)
+
 Requirements
 ------------
 
