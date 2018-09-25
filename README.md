@@ -1,5 +1,6 @@
 HPE Software role
 =================
+[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-pyguy.hpe__software-blue.svg)](https://galaxy.ansible.com/pyguy/hpe_software)
 
 This role is installing the HPE software on different platforms using ansible roles.
 
