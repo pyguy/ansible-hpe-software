@@ -4,7 +4,8 @@
   check_model: true
   # Ubuntu 16.04 or 18.04
   hpe_dist: xenial
-  # HPE Gen9 and earlier 
+  # HPE Gen9 and earlier
+  # for CentOS it should be `current`, 10.62 doesn't exist for CentOS at the moment
   hpe_project_ver: 10.62
 
   roles:

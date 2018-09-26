@@ -1,6 +1,6 @@
 ---
 
-# 'current' for Gen10, '10.xx' for Gen9 ans older
+# 'current' for Gen10, '10.xx' for Gen9 and earlier
 hpe_project_ver: 10.62
 
 # check the server model
