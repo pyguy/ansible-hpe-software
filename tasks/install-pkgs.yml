@@ -21,6 +21,12 @@
             https://downloads.linux.hpe.com/SDR/hpePublicKey2048_key1.pub
   when: ansible_distribution == 'CentOS' or ansible_distribution == 'RedHat'
 
+- name: Check epel repo
+  yum:
+    state: present
+    name: epel-release
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'RedHat'
+
 - name: Add HPE Apt signing keys
   apt_key: url="{{ item }}" state=present
   with_items:
